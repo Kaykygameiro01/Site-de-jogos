@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PixelPlay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="icon" type="image/x-icon" href="/img/icon.png">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif; background-color: #240e40; margin: 0; padding: 0;">
+
+  <!-- Cabeçalho -->
+  <h1 style="color: #fdfdfd; text-decoration: none; background: #1e90ff; font-size: 32px; padding: 10px; border: 4px solid #240e40; margin: 30px; text-align: center;">Início</h1>
+  <img src="/img/pixepplay.svg" alt="Banner do site PixelPlay" style="width: 100%; height: auto;">
+
+  <section>
+    <h2 style="text-align: center; color: #e6e6e6; font-size: xx-large; ">
+      Catálogo
+    </h2>
+
+    <div>
+      <table style="width: 50%; margin: 20px auto; background-color: #240e40; border-collapse: collapse; box-shadow: 0px 0px 10px #1e90ff; color: #fff;">
+        <tr>
+          <th style="background-color: #1e90ff; color: #fff; padding: 10px;">Foto</th>
+          <th style="background-color: #1e90ff; color: #fff; padding: 10px;">Jogo</th>
+          <th style="background-color: #1e90ff; color: #fff; padding: 10px;">Preço</th>
+          <th style="background-color: #1e90ff; color: #fff; padding: 10px;">Vídeo</th>
+        </tr>
+        <tr>
+          <td><img src="/img/fthorizon.jpg" alt="Horizon Forbidden West PS5" style="width: 70%"></td>
+          <td>Horizon Forbidden West PS5</td>
+          <td>R$ 249,90</td>
+          <td> <iframe width=" 2189" height="794" src="https://www.youtube.com/embed/ztwwQByMmmE" title="Horizon Forbidden West - Trailer da História | PS5, PS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%; height: auto;"></iframe></td>
+        </tr>
+        <tr>
+          <td><img src="img/spider2.avif" alt="Homem Aranha 2 PS5" style="width: 70%; height: auto;"></td>
+          <td>Homem Aranha 2 PS5</td>
+          <td>R$ 249,90</td>
+          <td> <iframe src="https://www.youtube.com/embed/07bcyesxbrg" title="Marvel’s Spider-Man 2 - Trailer da história | PS5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%; height: auto;"></iframe></td>
+        </tr>
+        <tr>
+          <td><img src="img/ratchet.webp" alt="Ratchet & Clank: Rift Apart PS5" style="width: 70%; height: auto;"></td>
+          <td>Ratchet & Clank: Rift Apart PS5</td>
+          <td>R$ 249,90</td>
+          <td> <iframe src="https://www.youtube.com/embed/ai3o0XtrnM8" title="Ratchet &amp; Clank: Rift Apart - Announcement Trailer | PS5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%; height: auto;"></iframe></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; color: #fff; background-color: #1e90ff;">Finalizar Compra</h2>
+    <form style="text-align: center;">
+      <label for="nome" style="display: block; color: #ffffff;">NOME</label>
+      <input type="text" id="nome" name="nome" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="cpf" style="display: block;color: #ffffff;">CPF</label>
+      <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="endereco" style="display: block;color: #ffffff;">ENDEREÇO</label>
+      <input type="text" id="endereco" name="endereco" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="telefone" style="display: block;color: #ffffff;">TELEFONE</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(DD) 00000-0000" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="numero_cartao" style="display: block;color: #ffffff;">NÚMERO NO CARTÃO</label>
+      <input type="text" id="numero_cartao" name="numero_cartao" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="cvc" style="display: block;color: #ffffff;">CVC</label>
+      <input type="text" id="cvc" name="cvc" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="validade" style="display: block;color: #ffffff;">VALIDADE</label>
+      <input type="text" id="validade" name="validade" placeholder="MM/AA" style="padding: 10px; margin: 5px; width: 20%;" />
+
+      <label for="parcelas" style="display: block;color: #ffffff;">PARCELAS</label>
+      <select name="parcelas" id="parcelas" style="padding: 10px; margin: 5px; width: 21%;">
+        <option value="1x">1x de R$ 249,90</option>
+        <option value="2x">2x de R$ 125,00</option>
+        <option value="3x">3x de R$ 83,50</option>
+      </select>
+      <br>
+      <button style="margin: 10px; padding: 10px 20px; font-size: 20px; border-radius: 7px; background-color: #1e90ff; cursor: pointer;">EFETUAR PAGAMENTO</button>
+    </form>
+
+  </section>
+
+  <!-- Rodapé -->
+  <footer style="background-color: #1e90ff; color: #fdfdfd; text-align: center; padding: 10px;box-shadow: 0px 0px 10px #1e90ff">
+    <div>
+      <div>
+        <h3 style="font-size: 32px;">Contato</h3>
+        <ul>
+          <li><a href="tel:+5521999381132" style="color: #fdfdfd; font-size: 24px;">+55 21 99938-1132</a></li>
+          <li><a href="mailto:contato@pixelplay.com" style=" color: #fdfdfd; font-size: 24px;">contato@pixelplay.com</a></li>
+          <br>
+          <li>
+            <h3>Av. Roberto Dinamite, 10 - São Cristovão</h3>
+          </li>
+          <li>
+            <h3>Rio de Janeiro - RJ</h3>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <br>
+        <h4>© copyright PixelPlay.</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
